@@ -1,80 +1,132 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="de">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hartmut Wickert</title>
 
 <style>
-
-body{
-    font-family: Georgia, serif;
-    max-width: 720px;
-    margin: 120px auto;
-    line-height:1.7;
-    color:#222;
+body {
+    margin: 0;
+    background: #f6d97a;
+    color: #1f1f1f;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-h1{
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 80px 48px 100px 48px;
+}
+
+h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 72px;
     font-weight: normal;
-    font-size: 32px;
+    line-height: 1;
+    margin: 0 0 32px 0;
 }
 
-nav{
-    margin-top:40px;
+.subtitle {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 56px;
 }
 
-nav a{
-    display:block;
-    margin:10px 0;
-    text-decoration:none;
-    color:#111;
+.intro {
+    max-width: 700px;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 64px;
 }
 
-nav a:hover{
-    text-decoration:underline;
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px 56px;
+    max-width: 900px;
 }
 
-footer{
-    margin-top:80px;
-    font-size:14px;
-    color:#777;
+.item a {
+    text-decoration: none;
+    color: #1f1f1f;
 }
 
+.item a:hover .title {
+    text-decoration: underline;
+}
+
+.title {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.desc {
+    font-size: 18px;
+    line-height: 1.45;
+    max-width: 360px;
+}
+
+.footer {
+    margin-top: 80px;
+    font-size: 16px;
+}
 </style>
-
 </head>
-
 <body>
 
-<h1>Hartmut Wickert</h1>
+<div class="container">
+    <h1>Hartmut Wickert</h1>
 
-<p>
-Schreiben · Performance · Institution · Archiv
-</p>
+    <div class="subtitle">
+        Schreiben · Performance · Institution · Archiv
+    </div>
 
-<nav>
+    <div class="intro">
+        Diese Seite bündelt Texte, Projekte, institutionelle Arbeiten und Archivzugänge aus verschiedenen Arbeitszusammenhängen.
+    </div>
 
-<a href="https://hartmutwickert.wordpress.com">Texte</a>
+    <div class="grid">
+        <div class="item">
+            <a href="https://hartmutwickert.wordpress.com">
+                <div class="title">Schreiben</div>
+                <div class="desc">Essays, Artikel, Notate und ältere Textbestände.</div>
+            </a>
+        </div>
 
-<a href="https://hartmutwickert.wordpress.com">Essays</a>
+        <div class="item">
+            <a href="#">
+                <div class="title">Performance</div>
+                <div class="desc">Öffentliche Formen, Auftritte, theatrale Setzungen.</div>
+            </a>
+        </div>
 
-<a href="#">Projekte</a>
+        <div class="item">
+            <a href="#">
+                <div class="title">Institution</div>
+                <div class="desc">Arbeiten an Leitung, Struktur und Rahmung kultureller Zusammenhänge.</div>
+            </a>
+        </div>
 
-<a href="#">Shadow Library</a>
+        <div class="item">
+            <a href="#">
+                <div class="title">Shadow Library</div>
+                <div class="desc">Exzerpte, Referenzen, Fundstücke und Lesespuren.</div>
+            </a>
+        </div>
 
-<a href="#">Archiv</a>
+        <div class="item">
+            <a href="https://hartmutwickert.wordpress.com">
+                <div class="title">Archiv</div>
+                <div class="desc">Frühere Materialien und ältere Ordnungen der Website.</div>
+            </a>
+        </div>
+    </div>
 
-</nav>
-
-<footer>
-
-<p>
-Eine fortlaufende Sammlung von Texten, Projekten und institutionellen Experimenten.
-</p>
-
-</footer>
+    <div class="footer">
+        Auswahl und Archiv.
+    </div>
+</div>
 
 </body>
-
 </html>
