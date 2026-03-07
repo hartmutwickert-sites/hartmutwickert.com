@@ -1,18 +1,11 @@
 <!DOCTYPE html>
-<div class="container">
-
-<h1>Hartmut Wickert</h1>
-
-<div class="subtitle">
-Schreiben · Performance · Institution · Archiv
-</div>
-
-<div class="hero">
-<img src="stage.jpg">
-</div>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hartmut Wickert</title>
 
 <style>
-
 body{
     margin:0;
     background:#ffd84d;
@@ -35,49 +28,50 @@ h1{
 
 .subtitle{
     font-size:22px;
-    margin-bottom:80px;
+    margin-bottom:40px;
 }
 
-.section{
-    margin:60px 0;
+.hero{
+    width:100%;
+    margin:40px 0 80px 0;
 }
 
-.section h2{
+.hero img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    filter: blur(2.5px) brightness(0.9);
+    display:block;
+}
+
+.sections{
+    position:relative;
+    height:700px;
+}
+
+.block{
+    position:absolute;
+    max-width:300px;
+}
+
+.b1{ top:0px; left:0px; }
+.b2{ top:120px; left:360px; }
+.b3{ top:280px; left:180px; }
+.b4{ top:420px; left:500px; }
+.b5{ top:560px; left:120px; }
+
+.section h2,
+.block h2{
     font-size:30px;
     margin-bottom:6px;
 }
 
-.section p{
+.section p,
+.block p{
     font-family: Georgia, serif;
     font-size:18px;
     margin:0;
-}
-    
-.sections{
-position:relative;
-height:700px;
-}
-
-.block{
-position:absolute;
-max-width:300px;
-}
-
-.b1{ top:0px; left:0px; }
-
-.b2{ top:120px; left:360px; }
-
-.b3{ top:280px; left:180px; }
-
-.b4{ top:420px; left:500px; }
-
-.b5{ top:560px; left:120px; }
-.left{
-    margin-right:40%;
-}
-
-.right{
-    margin-left:40%;
+    line-height:1.4;
 }
 
 a{
@@ -93,57 +87,55 @@ footer{
     margin-top:100px;
     font-size:15px;
 }
-.hero{
-width:100%;
-margin:60px 0 80px 0;
-}
-    
-.hero img{
-width:100%;
-height:150px;
-object-fit:cover;
-filter: blur(2,5px) brightness(0.9);
-}
-
 </style>
-
 </head>
 
 <body>
+<div class="container">
 
-<div class="sections">
+    <h1>Hartmut Wickert</h1>
 
-<div class="block b1">
-<h2><a href="https://hartmutwickert.wordpress.com">Schreiben</a></h2>
-<p>Essays, Artikel und Notate aus verschiedenen Zusammenhängen.</p>
+    <div class="subtitle">
+        Schreiben · Performance · Institution · Archiv
+    </div>
+
+    <div class="hero">
+        <img src="stage.jpg" alt="Diskussionsraum">
+    </div>
+
+    <div class="sections">
+
+        <div class="block b1">
+            <h2><a href="https://hartmutwickert.wordpress.com">Schreiben</a></h2>
+            <p>Essays, Artikel und Notate aus verschiedenen Zusammenhängen.</p>
+        </div>
+
+        <div class="block b2">
+            <h2>Performance</h2>
+            <p>Öffentliche Formen, Auftritte und theatrale Setzungen.</p>
+        </div>
+
+        <div class="block b3">
+            <h2>Institution</h2>
+            <p>Arbeiten an Leitung, Struktur und kulturellen Rahmenbedingungen.</p>
+        </div>
+
+        <div class="block b4">
+            <h2>Shadow Library</h2>
+            <p>Exzerpte, Referenzen und Lesespuren.</p>
+        </div>
+
+        <div class="block b5">
+            <h2><a href="https://hartmutwickert.wordpress.com">Archiv</a></h2>
+            <p>Frühere Materialien und ältere Ordnungen der Website.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        Auswahl und Archiv.
+    </footer>
+
 </div>
-
-<div class="block b2">
-<h2>Performance</h2>
-<p>Öffentliche Formen, Auftritte und theatrale Setzungen.</p>
-</div>
-
-<div class="block b3">
-<h2>Institution</h2>
-<p>Arbeiten an Leitung, Struktur und kulturellen Rahmenbedingungen.</p>
-</div>
-
-<div class="block b4">
-<h2>Shadow Library</h2>
-<p>Exzerpte, Referenzen und Lesespuren.</p>
-</div>
-
-<div class="block b5">
-<h2><a href="https://hartmutwickert.wordpress.com">Archiv</a></h2>
-<p>Frühere Materialien und ältere Ordnungen der Website.</p>
-</div>
-
-</div>
-<footer>
-Auswahl und Archiv.
-</footer>
-
-</div>
-
 </body>
 </html>
