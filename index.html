@@ -10,65 +10,82 @@
 
 body{
     margin:0;
-    background:#f3c3a4;
+    background:#ffd84d;
     color:#222;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .container{
-    max-width:920px;
+    max-width:900px;
     margin:auto;
-    padding:90px 40px 100px 40px;
+    padding:100px 40px;
 }
 
 h1{
-    font-family: Georgia, "Times New Roman", serif;
-    font-size:60px;
+    font-family: Georgia, serif;
+    font-size:64px;
     font-weight:normal;
-    margin-bottom:12px;
+    margin-bottom:10px;
 }
 
 .subtitle{
-    font-family: Helvetica, Arial, sans-serif;
-    font-size:20px;
-    margin-bottom:60px;
-}
-
-nav{
-    font-family: Helvetica, Arial, sans-serif;
-    margin-bottom:70px;
-}
-
-nav a{
-    margin-right:26px;
-    text-decoration:none;
-    color:#222;
-    font-size:18px;
-}
-
-nav a:hover{
-    text-decoration:underline;
+    font-size:22px;
+    margin-bottom:80px;
 }
 
 .section{
-    margin-bottom:36px;
+    margin:60px 0;
 }
 
 .section h2{
-    font-family: Helvetica, Arial, sans-serif;
-    font-size:26px;
+    font-size:30px;
     margin-bottom:6px;
 }
 
 .section p{
     font-family: Georgia, serif;
     font-size:18px;
-    line-height:1.5;
     margin:0;
+}
+    
+.sections{
+position:relative;
+height:700px;
+}
+
+.block{
+position:absolute;
+max-width:300px;
+}
+
+.b1{ top:0px; left:0px; }
+
+.b2{ top:120px; left:360px; }
+
+.b3{ top:280px; left:180px; }
+
+.b4{ top:420px; left:500px; }
+
+.b5{ top:560px; left:120px; }
+.left{
+    margin-right:40%;
+}
+
+.right{
+    margin-left:40%;
+}
+
+a{
+    color:#222;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
 }
 
 footer{
-    margin-top:80px;
-    font-family: Helvetica, Arial, sans-serif;
+    margin-top:100px;
     font-size:15px;
 }
 
@@ -86,34 +103,34 @@ footer{
 Schreiben · Performance · Institution · Archiv
 </div>
 
-<nav>
-<a href="https://hartmutwickert.wordpress.com">Texte</a>
-<a href="#">Performance</a>
-<a href="#">Institution</a>
-<a href="#">Shadow Library</a>
-<a href="https://hartmutwickert.wordpress.com">Archiv</a>
-</nav>
+<div class="sections">
 
-<div class="section">
-<h2>Schreiben</h2>
+<div class="block b1">
+<h2><a href="https://hartmutwickert.wordpress.com">Schreiben</a></h2>
 <p>Essays, Artikel und Notate aus verschiedenen Zusammenhängen.</p>
 </div>
 
-<div class="section">
+<div class="block b2">
 <h2>Performance</h2>
 <p>Öffentliche Formen, Auftritte und theatrale Setzungen.</p>
 </div>
 
-<div class="section">
+<div class="block b3">
 <h2>Institution</h2>
 <p>Arbeiten an Leitung, Struktur und kulturellen Rahmenbedingungen.</p>
 </div>
 
-<div class="section">
+<div class="block b4">
 <h2>Shadow Library</h2>
 <p>Exzerpte, Referenzen und Lesespuren.</p>
 </div>
 
+<div class="block b5">
+<h2><a href="https://hartmutwickert.wordpress.com">Archiv</a></h2>
+<p>Frühere Materialien und ältere Ordnungen der Website.</p>
+</div>
+
+</div>
 <footer>
 Auswahl und Archiv.
 </footer>
