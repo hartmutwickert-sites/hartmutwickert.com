@@ -74,7 +74,10 @@ a{
 a:hover{
     text-decoration:underline;
 }
-
+a.external::after{
+    content:" ↗";
+    font-size:0.9em;
+}
 footer{
     margin-top:40px;
     font-size:15px;
