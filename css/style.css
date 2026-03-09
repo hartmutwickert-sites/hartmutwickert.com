@@ -68,54 +68,41 @@ h1{
 /* Schreiben / Textlisten */
 
 .year{
+    margin-top:80px;
+    margin-bottom:34px;
+    font-size:28px;
     font-family: Helvetica, Arial, sans-serif;
-    font-size:30px;
     font-weight:bold;
-    color:#5a5137;
-    margin:90px 0 40px 0;
+    opacity:0.7;
 }
 
-.writing-item{
-    margin:0 0 48px 0;
+.entry{
+    margin:0 0 42px 0;
+    max-width:760px;
 }
 
-.writing-item h2,
-.writing-item h3{
+.entry a{
     font-family: Georgia, serif;
     font-size:30px;
     font-weight:bold;
     line-height:1.15;
-    margin:0 0 6px 0;
-}
-
-.writing-item p{
-    font-family: Georgia, serif;
-    font-size:18px;
-    font-weight:normal;
-    line-height:1.35;
-    margin:0;
-}
-
-.writing-item .meta{
-    margin-top:10px;
-}
-
-.writing-item .read-link{
-    display:inline-block;
-    margin-top:18px;
-    font-family: Georgia, serif;
-    font-size:18px;
-    font-weight:normal;
-}
-
-a{
     color:#222;
     text-decoration:none;
 }
 
-a:hover{
+.entry a:hover{
     text-decoration:underline;
 }
+
+.desc{
+    display:inline-block;
+    margin-top:2px;
+    font-family: Georgia, serif;
+    font-size:18px;
+    line-height:1.35;
+    opacity:0.8;
+}
+
 
 a.external::after{
     content:" ↗";
