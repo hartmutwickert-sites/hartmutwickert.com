@@ -15,12 +15,15 @@ h1{
     font-family: Georgia, serif;
     font-size:64px;
     font-weight:normal;
-    margin-bottom:10px;
+    line-height:1;
+    margin:0 0 22px 0;
 }
 
 .subtitle{
     font-size:22px;
-    margin-bottom:40px;
+    line-height:1.35;
+    margin:0 0 90px 0;
+    max-width:850px;
 }
 
 .hero{
@@ -65,7 +68,7 @@ h1{
     margin:0;
 }
 
-/* Schreiben / Textlisten */
+/* Regalseiten */
 
 .year{
     margin-top:80px;
@@ -77,7 +80,7 @@ h1{
 }
 
 .entry{
-    margin:0 0 42px 0;
+    margin:0 0 46px 0;
     max-width:760px;
 }
 
@@ -96,13 +99,40 @@ h1{
 
 .desc{
     display:inline-block;
-    margin-top:2px;
+    margin-top:4px;
     font-family: Georgia, serif;
     font-size:18px;
     line-height:1.35;
     opacity:0.8;
 }
 
+.meta{
+    margin-top:10px;
+    max-width:760px;
+    font-family: Georgia, serif;
+    font-size:18px;
+    line-height:1.35;
+    opacity:0.8;
+}
+
+.back{
+    margin-top:80px;
+    font-size:18px;
+    opacity:0.8;
+}
+
+a{
+    color:#222;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+a:visited{
+    color:#222;
+}
 
 a.external::after{
     content:" ↗";
